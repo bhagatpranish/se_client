@@ -18,7 +18,7 @@ export default function AddBuildingForm(props) {
         <TextField   
           required
           id="name"
-          label="Name" htmlFor="name"> Name
+          label="Building Name" htmlFor="name"> Name
         <input ref={props.nameRef} type="name" id="name" />
         <br />
         /</TextField>
