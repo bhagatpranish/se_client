@@ -1,6 +1,6 @@
 // import { TextField } from "@mui/material";
 import TextField from '@mui/material/TextField';
-import { Box } from '@mui/system';
+import { Box, Stack } from '@mui/system';
 
 export default function AddBuildingForm(props) {
   return (
@@ -14,52 +14,77 @@ export default function AddBuildingForm(props) {
     <div>
       <h3>Add Building</h3>
       <form onSubmit={props.onSubmit}>
-
         <TextField   
           required
           id="name"
-          label="Building Name" htmlFor="name"> Name
-        <input ref={props.nameRef} type="name" id="name" />
-        <br />
+          label="Building Name"> 
+        <input ref={props.nameRef} type="name" id="name"  />
         /</TextField>
 
-        
-
-        <label htmlFor="floors">Floors</label>
-        <input
-          ref={props.floorsRef}
-          type="number"
+        <TextField   
           id="floors"
-          placeholder="Number of Floors"
+          label="Number of Floors" >
+        <input 
+        type="number"
+        ref={props.floorsRef} 
+        variant="filled"
+        id="floors"l
+        InputLabelProps={{
+          shrink: true,
+        }}
         />
+        /</TextField>
+
+        <br/>
+        <br />
+        <label htmlFor="address"> Please add the building address below:</label>
         <br />
 
-        <label htmlFor="address"> Please write the Address below:</label>
+        <TextField 
+                label="Street">
+                <input 
+                ref={props.streetRef} 
+                type="street" 
+                id="street" 
+                />
+        /</TextField>
+
+        <br />
+        <TextField
+        id="city"
+        type="city"
+        label="City"
+        ref={props.cityRef}
+        />
+
+
         <br />
 
-        <label htmlFor="street"> Street</label>
-        <input ref={props.streetRef} type="street" id="street" />
-        <label htmlFor="city"> City</label>
-        <input
-          ref={props.cityRef}
-          type="city"
-          id="city"
-          defaultValue={"Waco"}
-        />
-        <br />
+        <TextField 
+                label="State">
+                <input 
+                ref={props.stateRef} 
+                type="state" 
+                id="state" 
+                />
+        /</TextField>
 
-        <label htmlFor="state"> State</label>
-        <input
-          ref={props.stateRef}
-          type="state"
-          id="state"
-          defaultValue={"Texas"}
-        />
-        <label htmlFor="zip"> Zip</label>
-        <input ref={props.zipRef} type="zip" id="zip" defaultValue={"76706"} />
+        <br />
+        
+        <TextField 
+                label="Zip">
+                <input 
+                ref={props.zipRef} 
+                type="zip" 
+                id="zip" 
+                />
+        /</TextField>
+
         <br />
 
         <button type="submit">Add Building</button>
+
+        
       </form>
     </div>
     </Box>
