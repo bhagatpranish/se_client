@@ -1,11 +1,29 @@
+// import { TextField } from "@mui/material";
+import TextField from '@mui/material/TextField';
+import { Box } from '@mui/system';
+
 export default function AddBuildingForm(props) {
   return (
+    <Box component="form"
+    sx={{
+      '& .MuiTextField-root': { m: 1, width: '25ch' },
+    }}
+    noValidate
+    autoComplete="off">
+
     <div>
       <h3>Add Building</h3>
       <form onSubmit={props.onSubmit}>
-        <label htmlFor="name"> Name</label>
+
+        <TextField   
+          required
+          id="name"
+          label="Name" htmlFor="name"> Name
         <input ref={props.nameRef} type="name" id="name" />
         <br />
+        /</TextField>
+
+        
 
         <label htmlFor="floors">Floors</label>
         <input
@@ -44,5 +62,6 @@ export default function AddBuildingForm(props) {
         <button type="submit">Add Building</button>
       </form>
     </div>
+    </Box>
   );
 }
