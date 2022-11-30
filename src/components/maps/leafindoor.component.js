@@ -585,7 +585,7 @@ export default function CreateIndoor(props) {
     }
     console.log(props.path)
 
-const currentPath = allPaths.filter(p=>p.properties.name==='ElevatorA_320');
+const currentPath = allPaths.filter(p=>p.properties.name==='ElevatorA_305');
 console.log("hello world",currentPath)
     const aa = [];
     if(currentPath.length <1){
