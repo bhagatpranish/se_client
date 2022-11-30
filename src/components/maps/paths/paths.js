@@ -581,6 +581,86 @@ var allPaths=[
         "properties": {
             "name": "ElevatorE_307"
         }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -97.11834519,
+                    31.5458807
+                ],
+                [
+                    -97.11838959,
+                    31.54584428
+                ]
+            ]
+        },
+        "id": "16505ca0-be2e-4eb6-b186-cc5310abdd06",
+        "properties": {
+            "name": "ElevatorE_353"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -97.11834575,
+                    31.5458813
+                ],
+                [
+                    -97.11837316,
+                    31.54585523
+                ],
+                [
+                    -97.11843228,
+                    31.5459059
+                ],
+                [
+                    -97.11848269,
+                    31.54586857
+                ],
+                [
+                    -97.11846699,
+                    31.54583365
+                ]
+            ]
+        },
+        "id": "02f9d098-075b-4191-8738-4221b9520bb3",
+        "properties": {
+            "name": "ElevatorE_352"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    -97.1183437,
+                    31.5458791
+                ],
+                [
+                    -97.1183764,
+                    31.54585995
+                ],
+                [
+                    -97.11843564,
+                    31.54591348
+                ],
+                [
+                    -97.1184923,
+                    31.54585757
+                ]
+            ]
+        },
+        "id": "0a44adc9-8c33-4219-9597-21edda18553f",
+        "properties": {
+            "name": "ElevatorE_351"
+        }
     }
 
 
