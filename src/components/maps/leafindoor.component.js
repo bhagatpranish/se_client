@@ -585,14 +585,14 @@ export default function CreateIndoor(props) {
     }
     console.log(props.path)
 
-    const currentPath = allPaths.filter(p=>p.properties.name===props.path);
-    console.log("hello world",currentPath)
+const currentPath = allPaths.filter(p=>p.properties.name==='ElevatorA_354');
+console.log("hello world",currentPath)
     const aa = [];
-    if(currentPath.length <1){
-        return (
-            window.alert("Sorry no path available in system right now.")
-        )
-    }
+if(currentPath.length <1){
+    return (
+        window.alert("Sorry! No path available in system right now.")
+    )
+}
     currentPath[0].geometry.coordinates.forEach(j=>{
         aa.push(new L.LatLng(j[1],j[0]))
     })
