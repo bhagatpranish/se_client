@@ -584,7 +584,7 @@ if(props.id =='1'){
     pointList = path3;
 }
 
-const currentPath = allPaths.filter(p=>p.properties.name==='ElevatorA_354');
+const currentPath = allPaths.filter(p=>p.properties.name==='315_306');
 console.log("hello world",currentPath)
     const aa = [];
 if(currentPath.length <1){
